@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="BackButton.png" />
+    <None Remove="free-icon-close-6276642.png" />
+    <None Remove="WindowFolder\AdminFolder\administrator.png" />
+    <None Remove="WindowFolder\AdminFolder\BackButton.png" />
+    <None Remove="WindowFolder\AdminFolder\Edit.png" />
+    <None Remove="WindowFolder\AdminFolder\free-icon-close-6276642.png" />
+    <None Remove="WindowFolder\AdminFolder\order.png" />
+    <None Remove="WindowFolder\AdminFolder\provider.png" />
+    <None Remove="WindowFolder\AdminFolder\Search.png" />
+    <None Remove="WindowFolder\AdminFolder\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="BackButton.png" />
+    <Resource Include="free-icon-close-6276642.png" />
+    <Resource Include="WindowFolder\AdminFolder\administrator.png" />
+    <Resource Include="WindowFolder\AdminFolder\BackButton.png" />
+    <Resource Include="WindowFolder\AdminFolder\Edit.png" />
+    <Resource Include="WindowFolder\AdminFolder\free-icon-close-6276642.png" />
+    <Resource Include="WindowFolder\AdminFolder\order.png" />
+    <Resource Include="WindowFolder\AdminFolder\provider.png" />
+    <Resource Include="WindowFolder\AdminFolder\Search.png" />
+    <Resource Include="WindowFolder\AdminFolder\user.png" />
+  </ItemGroup>
+
+</Project>

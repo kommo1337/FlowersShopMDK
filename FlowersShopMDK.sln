@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowersShopMDK", "FlowersShopMDK\FlowersShopMDK.csproj", "{6D1B4BAC-61E1-4A19-AAA9-187A8915F475}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D1B4BAC-61E1-4A19-AAA9-187A8915F475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1B4BAC-61E1-4A19-AAA9-187A8915F475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1B4BAC-61E1-4A19-AAA9-187A8915F475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1B4BAC-61E1-4A19-AAA9-187A8915F475}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C28A95CF-5309-4771-A7EA-386E3AB855DE}
+	EndGlobalSection
+EndGlobal

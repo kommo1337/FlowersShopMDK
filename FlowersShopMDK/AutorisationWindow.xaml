@@ -1,0 +1,24 @@
+﻿<Window x:Class="FlowersShopMDK.AutorisationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowersShopMDK"
+        mc:Ignorable="d"
+        Title="AutorisationWindow" Height="352" Width="400" Background="{x:Null}" WindowStyle="None" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="DragWindow" >
+    <Border Background="#e1e7e5" CornerRadius="4" BorderBrush="Gray" BorderThickness="1" >
+        <Grid>
+            <Label Content="Авторизация" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Cooper Black" FontWeight="Bold"/>
+            <TextBox x:Name="LoginTb" HorizontalAlignment="Left" Margin="10,152,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="184" Height="35" />
+
+            <Label Template="{DynamicResource LabelTemplateMain}" Content="Логин"   HorizontalAlignment="Left" Margin="83,123,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label Content="Пароль" HorizontalAlignment="Left" Margin="264,124,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Image Source="/free-icon-close-6276642.png" Margin="364,4,3,325" MouseDown="Image_MouseDown"/>
+            <Label Style="{DynamicResource LabelRegestration}" Content="Еще нет аккаунта? Регестрация" HorizontalAlignment="Left" Height="29" Margin="112,311,0,0" VerticalAlignment="Top" Width="184" FontWeight="Bold" FontSize="11" MouseDown="Regestration"/>
+            <Button Content="Авторизация" HorizontalAlignment="Left" Margin="83,229,0,0" VerticalAlignment="Top" Height="44" Width="223" Background="#22c1f2" Click="Autorisation"/>
+            <PasswordBox HorizontalAlignment="Center" Margin="204,152,0,0" VerticalAlignment="Top" Width="184" Height="35" x:Name="PaswordBSB"/>
+
+        </Grid>
+    </Border>
+
+</Window>
