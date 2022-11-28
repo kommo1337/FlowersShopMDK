@@ -13,7 +13,7 @@
 
             <Label Template="{DynamicResource LabelTemplateMain}" Content="Логин"   HorizontalAlignment="Left" Margin="83,123,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
             <Label Content="Пароль" HorizontalAlignment="Left" Margin="264,124,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-            <Image Source="/free-icon-close-6276642.png" Margin="364,4,3,325" MouseDown="Image_MouseDown"/>
+            <Image Source="/ResourceFolder/ImageFolder/free-icon-close-6276642.png" Margin="364,4,3,325" MouseDown="Image_MouseDown"/>
             <Label Style="{DynamicResource LabelRegestration}" Content="Еще нет аккаунта? Регестрация" HorizontalAlignment="Left" Height="29" Margin="112,311,0,0" VerticalAlignment="Top" Width="184" FontWeight="Bold" FontSize="11" MouseDown="Regestration"/>
             <Button Content="Авторизация" HorizontalAlignment="Left" Margin="83,229,0,0" VerticalAlignment="Top" Height="44" Width="223" Background="#22c1f2" Click="Autorisation"/>
             <PasswordBox HorizontalAlignment="Center" Margin="204,152,0,0" VerticalAlignment="Top" Width="184" Height="35" x:Name="PaswordBSB"/>

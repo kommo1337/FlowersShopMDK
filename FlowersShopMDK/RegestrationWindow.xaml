@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FlowersShopMDK"
         mc:Ignorable="d"
-        Title="RegestrationWindow" Height="400" Width="380" ResizeMode="NoResize" ShowInTaskbar="False" WindowStyle="None" Background="{x:Null}" WindowStartupLocation="CenterScreen">
+        Title="RegestrationWindow" Height="400" Width="380" ResizeMode="NoResize" ShowInTaskbar="False" WindowStyle="None" Background="{x:Null}" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="Window_MouseLeftButtonDown">
     <Border Background="#e1e7e5" CornerRadius="4" BorderBrush="Gray" BorderThickness="1" >
         <Grid>
             <Label Content="Регестрация" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Cooper Black" FontWeight="Bold"/>
@@ -14,13 +14,13 @@
             <PasswordBox x:Name="RepeatPasswordTb" HorizontalAlignment="Center" Margin="0,218,0,0"  VerticalAlignment="Top" Width="180" Height="35"/>
             <Label Template="{DynamicResource LabelTemplateMain}" Content="Логин"   HorizontalAlignment="Left" Margin="34,118,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
             <Label Content="Пароль" HorizontalAlignment="Left" Margin="30,169,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="30"/>
-            <Image Source="/free-icon-close-6276642.png" Margin="354,3,3,376" MouseDown="CloseWindow" />
+            <Image Source="/ResourceFolder/ImageFolder/free-icon-close-6276642.png" Margin="354,3,3,376" MouseDown="CloseWindow" />
             <Button Content="Регестрация" HorizontalAlignment="Center" Margin="0,334,0,0" VerticalAlignment="Top" Height="44" Width="222" Background="#22c1f2" Click="Button_Click" />
-            <Image Source="/BackButton.png" Margin="6,4,352,374" MouseDown="BackWindow" />
+            <Image Source="/ResourceFolder/ImageFolder/BackButton.png" Margin="6,4,352,374" MouseDown="BackWindow" />
             <Label Content="Повторите&#xD;&#xA;   пароль" HorizontalAlignment="Left" Margin="21,215,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
             <RadioButton Content="Администратор" HorizontalAlignment="Left" Margin="34,296,0,0" VerticalAlignment="Top" GroupName="RoleRB" x:Name="AdmRB" Checked="RB_Checked" />
             <RadioButton Content="Флорист" HorizontalAlignment="Left" Margin="144,296,0,0" VerticalAlignment="Top" x:Name ="FlwRB" Checked="RB_Checked"/>
-            <RadioButton Content="Еще кто-то" HorizontalAlignment="Left" Margin="215,296,0,0" VerticalAlignment="Top" x:Name ="MenRB" Checked="RB_Checked"/>
+            <RadioButton Content="Менеджер" HorizontalAlignment="Left" Margin="215,296,0,0" VerticalAlignment="Top" x:Name ="MenRB" Checked="RB_Checked"/>
 
 
         </Grid>

@@ -5,51 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FlowersShopMDK.WindowFolder.AdminFolder"
         mc:Ignorable="d"
-        Title="AdminWindow" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="{x:Null}">
+        Title="AdminWindow" Loaded="Window_Loaded" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="{x:Null}" MouseLeftButtonDown="Window_MouseLeftButtonDown">
     <Border Background="#e1e7e5" CornerRadius="4" BorderBrush="Gray" BorderThickness="1">
         <Grid>
             <Label Content="Меню администратора" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="64" Margin="269,39,0,0" VerticalAlignment="Top" Width="292" FontWeight="Bold" FontSize="24"/>
-            <Image HorizontalAlignment="Left" Height="23" Margin="774,0,0,0" VerticalAlignment="Top" Width="24" Source="/WindowFolder/AdminFolder/free-icon-close-6276642.png" MouseDown="Image_Close"/>
-            <Image HorizontalAlignment="Left" Height="24" Margin="10,10,0,0" VerticalAlignment="Top" Width="26" Source="/WindowFolder/AdminFolder/BackButton.png" MouseDown="Image_MouseDown"/>
-            <Image HorizontalAlignment="Left" Height="86" Margin="22,39,0,0" VerticalAlignment="Top" Width="78" Source="/WindowFolder/AdminFolder/administrator.png"/>
+            <Image HorizontalAlignment="Left" Height="23" Margin="774,0,0,0" VerticalAlignment="Top" Width="24" Source="/ResourceFolder/ImageFolder/free-icon-close-6276642.png" MouseDown="Image_Close" />
+            <Image HorizontalAlignment="Left" Height="24" Margin="10,10,0,0" VerticalAlignment="Top" Width="26" Source="/ResourceFolder/ImageFolder/BackButton.png" MouseDown="Image_MouseDown"/>
+            <Image HorizontalAlignment="Left" Height="86" Margin="22,39,0,0" VerticalAlignment="Top" Width="78" Source="/ResourceFolder/ImageFolder/administrator.png"/>
             <Menu Margin="10,131,10,278">
-                <MenuItem Height="38" Width="165" Header="Добавить пользователя">
+                <MenuItem Height="38" Width="165" Header="Добавить пользователя" Click="MenuItem_Click">
                     <MenuItem.Icon>
-                        <Image Source="/WindowFolder/AdminFolder/user.png" Margin="-2,-5,-7,-3"/>
-                    </MenuItem.Icon>
-                </MenuItem>
-                <MenuItem Header="Редактировать пользователя">
-                    <MenuItem.Icon>
-                        <Image Source="/WindowFolder/AdminFolder/Edit.png" Margin="-2,-7,-7,-7"/>
-                    </MenuItem.Icon>
-                </MenuItem>
-                <MenuItem Header="Список цветов">
-                    <MenuItem.Icon>
-                        <Image Source="/WindowFolder/AdminFolder/order.png" Margin="-4,-7,-7,-8"/>
-                    </MenuItem.Icon>
-                </MenuItem>
-                <MenuItem Header="Поставщики">
-                    <MenuItem.Icon>
-                        <Image Source="/WindowFolder/AdminFolder/provider.png" Margin="-2,-4,-8,-5"/>
+                        <Image Source="/ResourceFolder/ImageFolder/user.png" Margin="-2,-5,-7,-3"/>
                     </MenuItem.Icon>
                 </MenuItem>
             </Menu>
             <Label Content="Поиск" Style="{DynamicResource DefaultLabel}" HorizontalAlignment="Left" Margin="61,170,0,0" VerticalAlignment="Top" Height="64" Width="108" FontWeight="Bold"/>
-            <Image HorizontalAlignment="Left" Height="34" Margin="61,189,0,0" VerticalAlignment="Top" Width="30" Source="/WindowFolder/AdminFolder/Search.png"/>
-            <TextBox HorizontalAlignment="Left" Margin="146,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="601" Height="26"/>
-            <DataGrid  Margin="10,239,10,10" IsReadOnly="True"
+            <Image HorizontalAlignment="Left" Height="34" Margin="61,189,0,0" VerticalAlignment="Top" Width="30" Source="/ResourceFolder/ImageFolder/Search.png"/>
+            <TextBox HorizontalAlignment="Left" Margin="146,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="601" Height="26" x:Name="SearchTb" TextChanged="SearchTb_TextChanged"/>
+            <DataGrid  x:Name="ListUserDg"
+                       Margin="10,239,10,10" IsReadOnly="True"
                        AutoGenerateColumns="False"
                        CanUserResizeRows="False"
-                       CanUserResizeColumns="False" SelectionChanged="DataGrid_SelectionChanged">
+                       CanUserResizeColumns="False" 
+                       MouseDoubleClick="ListUserDg_MouseDoubleClick"
+                       >
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="№ п/п"
+                    <DataGridTextColumn Header="Id Пользователя"
                                     Binding="{Binding UserId}"
-                                    Width="70"/>
+                                    Width="*" />
                     <DataGridTextColumn Header="Логин"
-                                    Binding="{Binding UserLogin}"
+                                    Binding="{Binding Login}"
                                     Width="*"/>
                     <DataGridTextColumn Header="Пароль"
-                                    Binding="{Binding UserPassword}"
+                                    Binding="{Binding Password}"
                                     Width="*"/>
                     <DataGridTextColumn Header="Роль"
                                     Binding="{Binding IdRole}"

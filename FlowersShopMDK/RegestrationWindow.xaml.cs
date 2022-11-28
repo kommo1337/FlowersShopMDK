@@ -22,7 +22,7 @@ namespace FlowersShopMDK
     public partial class RegestrationWindow : Window
     {
         public string? SelectedValue;
-        int? RoleCheck = 0;
+        int? RoleCheck = 3;
         SqlConnection sqlConnection =
            new(@"Data Source=DESKTOP-Q9BEC2K;Initial Catalog=kommo;Integrated Security=True");
         SqlCommand sqlCommand;
@@ -88,6 +88,11 @@ namespace FlowersShopMDK
                 RoleCheck = 2;
             }
 
+        }
+
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
         }
     }
 }
