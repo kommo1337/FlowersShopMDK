@@ -78,5 +78,16 @@ namespace FlowersShopMDK.WindowFolder.ManagerFolder
             Dg.LoadDG("Select * From dbo.[Provider] " +
                       $"Where Name Like '%{SearchTb.Text}%'");
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            new AddProviderWindow().Show();
+            Close();
+        }
+
+        private void ListFlowerDg_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

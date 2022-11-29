@@ -1,6 +1,7 @@
 ﻿using FlowersShopMDK.ClassFolder;
 using FlowersShopMDK.WindowFolder.AdminFolder;
 using FlowersShopMDK.WindowFolder.FloristFolder;
+using FlowersShopMDK.WindowFolder.ManagerFolder;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -91,7 +92,8 @@ namespace FlowersShopMDK
                                 Close();
                                 break;
                             case "3":
-
+                                new ManagerWindow().Show();
+                                Close();
                                 break;
                         }
                     }

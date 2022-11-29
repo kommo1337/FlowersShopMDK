@@ -13,7 +13,7 @@
             <Image HorizontalAlignment="Left" Height="24" Margin="10,10,0,0" VerticalAlignment="Top" Width="26" Source="/ResourceFolder/ImageFolder/BackButton.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_1" />
             <Image HorizontalAlignment="Left" Height="86" Margin="22,39,0,0" VerticalAlignment="Top" Width="78" Source="/ResourceFolder/ImageFolder/provider.png"/>
             <Menu Margin="10,131,10,278">
-                <MenuItem Height="38" Width="169" Header="Добавить поставщика"  >
+                <MenuItem Height="38" Width="169" Header="Добавить поставщика" Click="MenuItem_Click"  >
                     <MenuItem.Icon>
                         <Image Source="/ResourceFolder/ImageFolder/order.png" Margin="-2,-5,-7,-3"/>
                     </MenuItem.Icon>
