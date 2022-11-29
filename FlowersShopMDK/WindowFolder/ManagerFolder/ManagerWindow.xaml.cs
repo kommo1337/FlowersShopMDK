@@ -87,7 +87,24 @@ namespace FlowersShopMDK.WindowFolder.ManagerFolder
 
         private void ListFlowerDg_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
+            if (ListProviderDg.SelectedItem == null)
+            {
+                MBClass.ErrorMB("Выбирите строчку");
+            }
+            else
+            {
+                try
+                {
+                    VariableClass.ProviderId = Dg.SelectId();
+                    new EditProviderWindow().Show();
+                    Close();
+                }
+                catch (Exception ex)
+                {
 
+                    MBClass.ErrorMB(ex);
+                }
+            }
         }
     }
 }
