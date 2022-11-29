@@ -8,7 +8,7 @@
         Title="AdminWindow" Loaded="Window_Loaded" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="{x:Null}" MouseDown="Window_MouseDown" >
     <Border Background="#e1e7e5" CornerRadius="4" BorderBrush="Gray" BorderThickness="1">
         <Grid>
-            <Label Content="Меню менаджера" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="64" Margin="269,39,0,0" VerticalAlignment="Top" Width="292" FontWeight="Bold" FontSize="24"/>
+            <Label Content="Меню менеджера" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="64" Margin="269,39,0,0" VerticalAlignment="Top" Width="292" FontWeight="Bold" FontSize="24"/>
             <Image HorizontalAlignment="Left" Height="23" Margin="774,0,0,0" VerticalAlignment="Top" Width="24" Source="/ResourceFolder/ImageFolder/free-icon-close-6276642.png" MouseLeftButtonDown="Image_MouseLeftButtonDown"  />
             <Image HorizontalAlignment="Left" Height="24" Margin="10,10,0,0" VerticalAlignment="Top" Width="26" Source="/ResourceFolder/ImageFolder/BackButton.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_1" />
             <Image HorizontalAlignment="Left" Height="86" Margin="22,39,0,0" VerticalAlignment="Top" Width="78" Source="/ResourceFolder/ImageFolder/provider.png"/>

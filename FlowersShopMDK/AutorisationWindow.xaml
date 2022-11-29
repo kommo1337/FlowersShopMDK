@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FlowersShopMDK"
         mc:Ignorable="d"
-        Title="AutorisationWindow" Height="352" Width="400" Background="{x:Null}" WindowStyle="None" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="DragWindow" >
+        Title="AutorisationWindow" Height="352" Width="400" Background="Transparent" BorderBrush="Transparent" WindowStyle="None" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="DragWindow" >
     <Border Background="#e1e7e5" CornerRadius="4" BorderBrush="Gray" BorderThickness="1" >
         <Grid>
             <Label Content="Авторизация" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Cooper Black" FontWeight="Bold"/>

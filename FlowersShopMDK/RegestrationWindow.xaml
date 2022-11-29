@@ -8,7 +8,7 @@
         Title="RegestrationWindow" Height="400" Width="380" ResizeMode="NoResize" ShowInTaskbar="False" WindowStyle="None" Background="{x:Null}" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="Window_MouseLeftButtonDown">
     <Border Background="#e1e7e5" CornerRadius="4" BorderBrush="Gray" BorderThickness="1" >
         <Grid>
-            <Label Content="Регестрация" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Cooper Black" FontWeight="Bold"/>
+            <Label Content="Регистрация" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Cooper Black" FontWeight="Bold"/>
             <TextBox x:Name="LoginTb" HorizontalAlignment="Center" Margin="0,114,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="180" Height="35" />
             <PasswordBox x:Name="PasswordTb" HorizontalAlignment="Center" Margin="0,164,0,0"   VerticalAlignment="Top" Width="180" Height="35"/>
             <PasswordBox x:Name="RepeatPasswordTb" HorizontalAlignment="Center" Margin="0,218,0,0"  VerticalAlignment="Top" Width="180" Height="35"/>
