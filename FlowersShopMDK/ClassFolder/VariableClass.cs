@@ -9,5 +9,7 @@ namespace FlowersShopMDK.ClassFolder
     internal class VariableClass
     {
         public static string UserId { get; set; }
+        public static string FlowersId { get; set; }
+        public static string ProviderId { get; set; }
     }
 }

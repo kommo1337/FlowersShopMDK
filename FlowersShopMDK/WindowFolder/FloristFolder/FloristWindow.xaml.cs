@@ -1,4 +1,5 @@
 ﻿using FlowersShopMDK.ClassFolder;
+using FlowersShopMDK.WindowFolder.AdminFolder;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -60,6 +61,28 @@ namespace FlowersShopMDK.WindowFolder.FloristFolder
         {
             new AddFlowerWindow().Show();
             Close();
+        }
+
+        private void ListFlowerDg_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (ListFlowerDg.SelectedItem == null)
+            {
+                MBClass.ErrorMB("Выбирите строчку");
+            }
+            else
+            {
+                try
+                {
+                    VariableClass.FlowersId = Dg.SelectId();
+                    new EditFlowerWindow().Show();
+                    Close();
+                }
+                catch (Exception ex)
+                {
+
+                    MBClass.ErrorMB(ex);
+                }
+            }
         }
     }
 }

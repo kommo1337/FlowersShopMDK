@@ -1,21 +1,21 @@
-﻿<Window x:Class="FlowersShopMDK.WindowFolder.FloristFolder.FloristWindow"
+﻿<Window x:Class="FlowersShopMDK.WindowFolder.ManagerFolder.ManagerWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:FlowersShopMDK.WindowFolder.FloristFolder"
+        xmlns:local="clr-namespace:FlowersShopMDK.WindowFolder.ManagerFolder"
         mc:Ignorable="d"
-         Title="AdminWindow" Loaded="Window_Loaded" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="{x:Null}" MouseDown="Window_MouseDown" >
+        Title="AdminWindow" Loaded="Window_Loaded" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="{x:Null}" MouseDown="Window_MouseDown" >
     <Border Background="#e1e7e5" CornerRadius="4" BorderBrush="Gray" BorderThickness="1">
         <Grid>
-            <Label Content="Меню флориста" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="64" Margin="269,39,0,0" VerticalAlignment="Top" Width="292" FontWeight="Bold" FontSize="24"/>
+            <Label Content="Меню менаджера" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="64" Margin="269,39,0,0" VerticalAlignment="Top" Width="292" FontWeight="Bold" FontSize="24"/>
             <Image HorizontalAlignment="Left" Height="23" Margin="774,0,0,0" VerticalAlignment="Top" Width="24" Source="/ResourceFolder/ImageFolder/free-icon-close-6276642.png" MouseLeftButtonDown="Image_MouseLeftButtonDown"  />
             <Image HorizontalAlignment="Left" Height="24" Margin="10,10,0,0" VerticalAlignment="Top" Width="26" Source="/ResourceFolder/ImageFolder/BackButton.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_1" />
-            <Image HorizontalAlignment="Left" Height="86" Margin="22,39,0,0" VerticalAlignment="Top" Width="78" Source="/ResourceFolder/ImageFolder/florismain.png"/>
+            <Image HorizontalAlignment="Left" Height="86" Margin="22,39,0,0" VerticalAlignment="Top" Width="78" Source="/ResourceFolder/ImageFolder/provider.png"/>
             <Menu Margin="10,131,10,278">
-                <MenuItem Height="38" Width="169" Header="Добавить цветы" Click="MenuItem_Click" >
+                <MenuItem Height="38" Width="169" Header="Добавить поставщика"  >
                     <MenuItem.Icon>
-                        <Image Source="/ResourceFolder/ImageFolder/Florist.png" Margin="-2,-5,-7,-3"/>
+                        <Image Source="/ResourceFolder/ImageFolder/order.png" Margin="-2,-5,-7,-3"/>
                     </MenuItem.Icon>
                 </MenuItem>
 
@@ -24,23 +24,26 @@
             <Label Content="Поиск" Style="{DynamicResource DefaultLabel}" HorizontalAlignment="Left" Margin="61,170,0,0" VerticalAlignment="Top" Height="64" Width="108" FontWeight="Bold"/>
             <Image HorizontalAlignment="Left" Height="34" Margin="61,189,0,0" VerticalAlignment="Top" Width="30" Source="/ResourceFolder/ImageFolder/Search.png"/>
             <TextBox HorizontalAlignment="Left" Margin="146,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="601" Height="26" x:Name="SearchTb" TextChanged="TextBox_TextChanged"/>
-            <DataGrid  x:Name="ListFlowerDg"
+            <DataGrid  x:Name="ListProviderDg"
                        Margin="10,239,10,10" IsReadOnly="True"
                        AutoGenerateColumns="False"
                        CanUserResizeRows="False"
                        CanUserResizeColumns="False" MouseDoubleClick="ListFlowerDg_MouseDoubleClick" >
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Название"
+                    <DataGridTextColumn Header="Поставщик"
                                     Binding="{Binding Name}"
                                     Width="*"/>
-                    <DataGridTextColumn Header="Цена"
-                                    Binding="{Binding Price}"
+                    <DataGridTextColumn Header="Имя "
+                                    Binding="{Binding NameProvider}"
                                     Width="*"/>
-                    <DataGridTextColumn Header="Поставщик"
-                                    Binding="{Binding Provider}"
+                    <DataGridTextColumn Header="Фамилия"
+                                    Binding="{Binding SurnameProvider}"
                                     Width="*"/>
-                    <DataGridTextColumn Header="Количество"
-                                    Binding="{Binding Amount}"
+                    <DataGridTextColumn Header="Отчество"
+                                    Binding="{Binding TherdNameProvider}"
+                                    Width="*"/>
+                    <DataGridTextColumn Header="Телефон"
+                                    Binding="{Binding Phone}"
                                     Width="*"/>
                 </DataGrid.Columns>
             </DataGrid>
